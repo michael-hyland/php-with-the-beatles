@@ -1,0 +1,147 @@
+/* Reset */
+@import "https://meyerweb.com/eric/tools/css/reset/reset.css";
+
+body * {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+/* foundation */
+
+.inner-column {
+    max-width: 1000px;
+    margin-inline: auto;
+    padding: 20px;
+}
+
+main {
+    padding-bottom: 200px;
+    background-color: black;
+}
+
+picture {
+    display: block;
+}
+
+picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+:is(p, ul, h2) + p {
+    margin-top: 30px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+li {
+    display: flex;
+    align-items: baseline;
+    /* line-height: 1.75; */
+}
+
+li::before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 10px;
+    background-color: black;
+    border: 1px solid white;
+    margin-right: 10px;
+    transform: translateY(-25%);
+}
+
+section .inner-column {
+    padding-block: 50px;
+}
+
+/* Typography */
+
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: table-caption;
+    text-transform: lowercase;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+p, li {
+    font-size: 1.4rem;
+    line-height: 1.75;
+    font-weight: 300;
+}
+
+li {
+    font-size: 1.25rem;
+}
+
+p::first-letter {
+    text-transform: capitalize;
+}
+
+/* Colors */
+
+section {
+    background-color: black;
+    color: white;
+}
+
+/* Sections */
+
+.about picture {
+    position: relative;
+}
+
+.about picture img {
+    position: sticky;
+    top: 0;
+}
+
+section .inner-column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 0;
+}
+
+.member-profile {
+    padding-top: 100px;
+}
+
+.member-profile picture img {
+    border: 0.5px solid silver;
+}
+
+@media only screen and (min-width: 650px) {
+    section .inner-column {
+        flex-direction: row;
+        padding-top: 50px;
+    }
+
+    .member-profile picture {
+        max-width: 410px;
+    }
+
+    section:nth-of-type(even) .inner-column {
+        flex-direction: row-reverse;
+    }
+}
