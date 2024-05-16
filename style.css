@@ -43,18 +43,17 @@ ul {
 li {
     display: flex;
     align-items: baseline;
-    /* line-height: 1.75; */
 }
 
 li::before {
     content: "";
     height: 5px;
-    width: 5px;
+    min-width: 5px;
     border-radius: 10px;
     background-color: black;
     border: 1px solid white;
-    margin-right: 10px;
-    transform: translateY(-25%);
+    margin-right: 15px;
+    transform: translateY(-40%);
 }
 
 section .inner-column {
@@ -84,6 +83,10 @@ h2 {
     line-height: 1.2;
 }
 
+h1 {
+    font-weight: 700;
+}
+
 p, li {
     font-size: 1.4rem;
     line-height: 1.75;
@@ -103,6 +106,16 @@ p::first-letter {
 section {
     background-color: black;
     color: white;
+}
+
+a {
+    color: hsl(200, 100%, 60%);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: hsl(200, 100%, 70%);
 }
 
 /* Sections */

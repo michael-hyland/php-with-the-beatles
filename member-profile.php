@@ -6,12 +6,10 @@
     $roles = implode(", ", array_slice($member['roles'], 0, -1));
     $lastRole = end($member['roles']);
     
+    $image = $member['image'];
+    
     $birth = $member['birth'];
 
-    if(isset($member['image'])) {
-        $image = $member['image'];
-    }
-    
     if( isset($member['death']) ) {
         $death = $member['death'];  
         $age = "He died in $death at " . ($death - $birth) . " years old.";
@@ -20,7 +18,7 @@
     }
 ?>
 
-<section class="member-profile">
+<section class="member-profile" id=<?=slugify($name)?>>
     <div class="inner-column">
         <picture>
             <img src="<?=$image?>">

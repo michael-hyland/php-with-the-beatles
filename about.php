@@ -6,8 +6,10 @@ function membersList() {
     foreach ($members as $member) {
         $first = $member['name']['first'];
         $last = $member['name']['last'];
+        $name = "$first $last";
+        $link = slugify($name);
 
-        echo "<li>$first $last</li>";
+        echo "<li><a href='#$link'>$name</a></li>";
     }
     echo "</ul>";
 }

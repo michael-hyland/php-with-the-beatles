@@ -10,9 +10,9 @@ This project showcases how to...
 ## Checklist
 
 - [x] Create the data
-- [ ] Create the templates
-- [ ] Loop through data to fill in the templates
-- [ ] Style to look like the "with the beatles" album cover
+- [x] Create the templates
+- [x] Loop through data to fill in the templates
+- [x] Style to look like the "with the beatles" album cover
 
 ## How to write the article
 
