@@ -33,15 +33,15 @@ function albumsList() {
 
         <div class="text-content">
             <h2>About</h2>
-            
             <p><?= $bandName ?> are a band from <?= $location ?>.</p>
-    
             <p>The members consist of:</p>
             <?= membersList() ?>
-    
             <p>The albums they've released are:</p>
             <?= albumsList() ?>
         </div>
 
     </div>
 </section>
+
+?>
+

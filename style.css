@@ -114,7 +114,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: hsl(200, 100%, 70%);
 }
 

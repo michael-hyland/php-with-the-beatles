@@ -7,7 +7,6 @@
     $lastRole = end($member['roles']);
     
     $image = $member['image'];
-    
     $birth = $member['birth'];
 
     if( isset($member['death']) ) {
@@ -32,3 +31,5 @@
         </div>
     </div>
 </section>
+
+
